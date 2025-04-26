@@ -1,0 +1,22 @@
+svg {
+  height: auto;
+}
+.main-header {
+  padding: 16px;
+}
+.logo-anchor svg {
+  max-width: 60px;
+}
+.desktop-menu-container {
+  display: none;
+}
+.hamburger svg {
+  width: 40px;
+}
+.header-right {
+  text-align: right;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
