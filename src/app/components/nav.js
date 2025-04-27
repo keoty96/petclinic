@@ -6,16 +6,19 @@ import { useState } from "react";
 
 export default function Navbar() {
   // toggle hamburguer menu
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServiceOpen, setIsServiceOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsMenuOpen(!isMenuOpen);
+  };
+  const toggleServiceSubMenu = () => {
+    setIsServiceOpen(!isServiceOpen);
   };
 
   return (
-    <header className="bg-white">
-      <div className="main-header">
-        <div className="header-top">
+    <header className="fixed">
+        <div className="header-top bg-white flex justify-between content-center">
           <div className="header-left">
             <a href="/" className="logo-anchor">
               <svg
@@ -39,10 +42,10 @@ export default function Navbar() {
                 className="hamburger"
                 onClick={toggleMenu}
                 id="hamburger-button"
-                aria-expanded={isOpen}
+                aria-expanded={isMenuOpen}
                 aria-label="Menu"
               >
-                {!isOpen ? (
+                {!isMenuOpen ? (
                   /* hamburguer lines */
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -78,8 +81,7 @@ export default function Navbar() {
             </nav>
           </div>
         </div>
-        {isOpen && <NavbarMobile />}
-      </div>
+        {isMenuOpen && <NavbarMobile handleClick={toggleServiceSubMenu} isServiceOpen={isServiceOpen} />}
     </header>
   );
 }
