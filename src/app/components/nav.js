@@ -17,8 +17,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed">
-        <div className="header-top bg-white flex justify-between content-center">
+    <header className="fixed border border-b-neutral-950">
+        <div className="header-top bg-white flex justify-between items-center ">
           <div className="header-left">
             <a href="/" className="logo-anchor">
               <svg
