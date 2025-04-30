@@ -26,6 +26,10 @@ svg {
   padding: 16px;
 }
 
+.mobile-menu-container {
+  top: 92px;
+}
+
 .mobile-menu-container .mobile-menu {
   text-align: center;
   border-bottom: 1px solid var(--color-cyan-950);
@@ -53,6 +57,10 @@ svg {
 
 .mobile-menu-container .menu-item.open .sub-menu-item {
   border-top: 1px solid var(--color-white);
+}
+
+.navbar-placeholder {
+  height: 92px;
 }
 
 @media (min-width: 1024px) {
@@ -84,6 +92,10 @@ svg {
 
   .desktop-menu-container .menu-item:hover .sub-menu {
     display: block;
+  }
+
+  .navbar-placeholder {
+    height: 102px; 
   }
 
 }

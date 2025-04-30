@@ -4,11 +4,11 @@ export default function NavbarDesktop() {
       <div className="menu-main-menu-container">
         <ul className="main-menu flex">
           <li className="menu-item">
-            <a href="#">About Us</a>
+            <a href="/about">About Us</a>
           </li>
           <li className="menu-item relative">
-            <a href="#">Services</a>
-            <ul className="sub-menu absolute w-full bg-white shadow-lg shadow-indigo-500/40 right-0">
+            <a href="/services">Services</a>
+            <ul className="sub-menu absolute w-max text-center bg-white shadow-lg shadow-indigo-500/40">
               <li className="sub-menu-item p-4 hover:bg-slate-100">
                 <a href="https://southwoodsvet.com/service/grooming/">
                   Grooming
@@ -45,7 +45,10 @@ export default function NavbarDesktop() {
             </ul>
           </li>
           <li className="menu-item">
-            <a href="#"> Contact </a>
+            <a href="/contact"> Contact </a>
+          </li>
+          <li className="menu-item">
+            <a href="/appointment">Make an Appointment</a>
           </li>
         </ul>
       </div>

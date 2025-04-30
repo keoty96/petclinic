@@ -1,7 +1,7 @@
 export default function NavbarMobile({ handleClick, isServiceOpen }) {
 
   return (
-    <nav className="mobile-menu-container bg-white">
+    <nav className="mobile-menu-container bg-white w-screen absolute">
       <div className="menu-main-menu-container">
         <ul className="mobile-menu">
           <li className="menu-item">

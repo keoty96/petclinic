@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+    .hero {
+        height: 600px;
+    }
+    .hero img { /* change this to tailwind css*/
+        position: absolute;
+    left: 0;
+    width: 55%;
+    object-fit: cover;
+    height: 500px;
+    z-index: 1;
+    }
+    .hero div {
+        position: absolute;
+    right: 0;
+    width: 55%;
+    height: 500px;
+    text-align: right;
+    padding: 40px;
+    }
+}

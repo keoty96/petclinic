@@ -17,8 +17,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed border border-b-neutral-950">
-        <div className="header-top bg-white flex justify-between items-center ">
+    <header>
+        <div className="fixed border border-b-neutral-950 header-top bg-white flex justify-between items-center w-screen">
           <div className="header-left">
             <a href="/" className="logo-anchor">
               <svg
@@ -82,6 +82,7 @@ export default function Navbar() {
           </div>
         </div>
         {isMenuOpen && <NavbarMobile handleClick={toggleServiceSubMenu} isServiceOpen={isServiceOpen} />}
+        <div className="navbar-placeholder"></div>
     </header>
   );
 }
