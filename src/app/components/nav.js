@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="header-left">
             <a href="/" className="logo-anchor">
               <svg
-                fill="#000000"
+                fill="#065f46"
                 width="800px"
                 height="800px"
                 viewBox="0 0 50 50"

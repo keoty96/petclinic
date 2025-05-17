@@ -12,9 +12,11 @@ export default function Footer() {
                         Saturday: Closed</p>
                 </div>
             </div>
-            <div className="copyrigth">
-                <p>
-                    <a href="/privacy-policy/">Privacy Policy</a> | <a href="/accessibility/">Accessibility</a> | © Copyright 2025 - PetClinic.</p>
+            <div className="copyright p-3 bg-emerald-800 text-white">
+                <p className="max-w-5xl m-auto flex items-center gap-2 justify-center text-xs md:text-sm">
+                    <a className="hover:underline" href="/privacy-policy/">Privacy Policy</a> | 
+                    <a className="hover:underline" href="/accessibility/">Accessibility</a> | 
+                    © Copyright 2025 - PetClinic.</p>
             </div>
         </footer>
     )

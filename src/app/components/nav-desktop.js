@@ -4,7 +4,7 @@ export default function NavbarDesktop() {
       <div className="menu-main-menu-container">
         <ul className="main-menu flex">
           <li className="menu-item">
-            <a href="/about">About Us</a>
+            <a className="hover:underline" href="/about">About Us</a>
           </li>
           <li className="menu-item relative">
             <a href="/services">Services</a>
@@ -45,10 +45,10 @@ export default function NavbarDesktop() {
             </ul>
           </li>
           <li className="menu-item">
-            <a href="/contact"> Contact </a>
+            <a className="hover:underline" href="/contact"> Contact </a>
           </li>
           <li className="menu-item">
-            <a href="/appointment">Make an Appointment</a>
+            <a className="hover:underline" href="/appointment">Make an Appointment</a>
           </li>
         </ul>
       </div>
