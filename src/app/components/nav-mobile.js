@@ -8,13 +8,13 @@ export default function NavbarMobile({ handleClick, isServiceOpen }) {
             <a href="/about">About Us</a>
             <i className="fas fa-chevron-right"></i>
           </li>
-          <li className={`menu-item ${isServiceOpen ? "open" : ""}`}>
+          <li className="menu-item">
             <a href="/services">Services</a>
             <i className="fas fa-chevron-right"></i>
           </li>
-          <li className="menu-item">
+          {/* <li className="menu-item">
             <a href="#"> Contact </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>
